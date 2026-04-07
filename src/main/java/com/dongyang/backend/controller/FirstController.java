@@ -14,7 +14,7 @@ public class FirstController {
 
     @GetMapping("/hi")
     public String hello(Model mo) {
-        mo.addAttribute("userName","윤준진");
+        mo.addAttribute("userName","주천수");
         return "hi";
     }
 
