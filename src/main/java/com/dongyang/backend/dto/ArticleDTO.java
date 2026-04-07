@@ -1,8 +1,14 @@
 package com.dongyang.backend.dto;
 
+import com.dongyang.backend.entity.ArticleEntity;
+
 public class ArticleDTO {
     private String title;
     private String contents;
+
+    public ArticleEntity toEntity() {
+        return new ArticleEntity(null, title, contents);
+    }
 
     public String getTitle() {
         return title;
